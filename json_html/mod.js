@@ -34,7 +34,7 @@ function handleRequest(request) {
   return new Response(
     `<body
       align="center"
-      style="font-family: Avenir, Helvetica, Arial, sans-serif; font-size: 1.5rem;"
+      style="font-family: Helvetica, Arial, sans-serif; font-size: 1.5rem;"
     >
       <h1>Return JSON and/or HTML Example</h1>
       <p>
