@@ -1,5 +1,10 @@
+import * as log from "https://deno.land/std@0.97.0/log/mod.ts";
+
 function handleRequest(request) {
   const { pathname } = new URL(request.url);
+  const ip = event.request.headers.get("x-forwarded-for");
+
+  log.info({ pathname, timestamp: new Date(), ip })
 
   if (pathname.startsWith("/html")) {
     const html = `<html>
